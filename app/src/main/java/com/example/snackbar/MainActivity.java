@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button buttonAbrir;
     private Button buttonFechar;
-    private Snackbar snackbar;
+    //private Snackbar snackbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,24 +23,24 @@ public class MainActivity extends AppCompatActivity {
         buttonFechar = findViewById(R.id.buttonFechar);
 
         //Opcao 01
-        /*
         buttonAbrir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(
                         view,
                         "Botao Pressionado",
-                        Snackbar.LENGTH_INDEFINITE
+                        Snackbar.LENGTH_LONG
                 ).setAction("Confirmar", new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         //buttonAbrir.setText("Botao Abrir Alterado");
                     }
-                }).show();
+                }).setActionTextColor(getResources().getColor(R.color.colorPrimary)).show();
             }
         });
-        */
 
+
+        /*
         buttonAbrir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -64,6 +64,8 @@ public class MainActivity extends AppCompatActivity {
                 snackbar.dismiss();
             }
         });
+
+         */
 
     }
 }
